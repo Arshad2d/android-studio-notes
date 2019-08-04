@@ -1,0 +1,13 @@
+3. Set the OnClickListener for the button:
+
+rollButton.setOnClickListener {
+
+}
+
+4. Make the Toast:
+
+This code will make the rollButton show a Toast message.
+
+rollButton.setOnClickListener {
+    Toast.makeText(this, "button clicked", Toast.LENGTH_SHORT).show()
+}

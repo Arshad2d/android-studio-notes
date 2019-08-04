@@ -1,0 +1,30 @@
+you will make your app show a random number in the result_text TextView.
+
+1. Assign an id to TextView in the layout:
+
+android:id="@+id/result_text"
+
+2. Remove the Toast and create a method called rollDice:
+
+You can do this by adding the following:
+
+rollButton.setOnClickListener {
+    rollDice()
+}
+
+And then using the keyboard shortcut, you can generate the method in Android Studio:
+
+    Windows/Linux: Alt + Enter
+    Mac: Option + Enter
+
+3. Write have the rollDice method to get a random number between 1 and 6:
+
+val randomInt = Random().nextInt(6) + 1
+
+4. Use findViewById to get a reference to the TextView and assign it to an immutable variable called resultText:
+
+val resultText: TextView = findViewById(R.id.result_text)
+
+5. Finally, set the random value that you got above as the text of the TextView:
+
+resultText.text = randomInt.toString()

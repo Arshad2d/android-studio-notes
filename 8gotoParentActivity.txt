@@ -1,0 +1,3 @@
+open AndroidManifest.xml
+inside the corredponding activity add
+	android:parentActivityName=".MainActivity" #we can write the name of the parent activity

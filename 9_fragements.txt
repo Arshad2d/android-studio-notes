@@ -1,0 +1,5 @@
+*Life cycle method for a fragement is onCreateView()
+#We can add a fragment in to ways:-
+	1. using xml
+	2. at runtime
+# Using XML

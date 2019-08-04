@@ -1,0 +1,4 @@
+Linear Layout is a view group
+view groups are responsible for holding multiple views and als help to specify their position
+onClickListener:-
+In oreder to know when the button is clicked we can use this method and toast to know when the button is clicked

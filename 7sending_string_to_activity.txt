@@ -1,0 +1,17 @@
+steps:-
+1. change the id of edit text in activity_main.xml
+2. change the id of the text_view in 2nd activity
+3. inside the send_message method
+	EditText editText = findViewById(R.id.user_message);
+	String message = editText.getText().toString();
+
+	Intent intent = new Intent(this,Activity2.class);
+	intent.putExtra("EXTRA_MESSAGE",message);	#Extra Message is a key and message is the data to the key
+	startActivity(intent);
+4. Open 2nd Activity
+	Intent intent = getIntent()			 #get intent that start this activity
+	String message = intent.getStringExtra("EXTRA_MESSAGE")	#to fetch the extra message from the intent; we also need to specify the key for the message
+	TextView textView = findViewById(R.id.display_message);	# creating variable for textView
+	textView.setText(message); 			#pass the message
+Note:-
+findViewById=to find a perticular component using its id

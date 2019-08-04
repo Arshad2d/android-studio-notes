@@ -1,0 +1,31 @@
+1. Add the dice images to the drawable folder
+
+Add the Dice images file as explained in the previous video.
+
+2. Replace TextView with ImageView and assign empty_dice drawable to it:
+
+<ImageView
+        android:id="@+id/dice_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/empty_dice" />
+
+3. Replace reference to the TextView with the ImageView:
+
+val diceImage: ImageView = findViewById(R.id.dice_image)
+
+4. Choose the right drawable resource based on the value of randomInt:
+
+val drawableResource = when (randomInt) {
+            1 -> R.drawable.dice_1
+            2 -> R.drawable.dice_2
+            3 -> R.drawable.dice_3
+            4 -> R.drawable.dice_4
+            5 -> R.drawable.dice_5
+            else -> R.drawable.dice_6
+        }
+
+5. Finally, assign the drawableResource from above to diceImage:
+
+diceImage.setImageResource(drawableResource)
