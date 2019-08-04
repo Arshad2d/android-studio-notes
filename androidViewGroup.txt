@@ -2,3 +2,18 @@ Linear Layout is a view group
 view groups are responsible for holding multiple views and als help to specify their position
 onClickListener:-
 In oreder to know when the button is clicked we can use this method and toast to know when the button is clicked
+**Changes to make for linear layout
+	<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text="1" />
+
+</LinearLayout>
